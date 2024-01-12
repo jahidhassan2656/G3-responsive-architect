@@ -1,9 +1,22 @@
 /* Work sens font */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
- /* share style  */
+/* share style  */
 * {
     font-family: 'Work Sans', sans-serif;
+}
+
+.btn-parimary {
+    color: #fff;
+    border-radius: 8px;
+    background: #FF900E;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    padding: 20px 25px;
+    cursor: pointer;
+    border: 0px;
+  
 }
 
 /* header-section */
@@ -57,8 +70,33 @@ nav li a {
 }
 
 .banner-description {
-    color:  #727272;  
-    font-size: 1rem;    
+    color: #727272;
+    font-size: 1rem;
     font-weight: 400;
-   
+
+}
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Responsive media queries */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* Tablet or medium Device */
+
+@media screen and (min-width:577px) and (max-width:960px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
 }
