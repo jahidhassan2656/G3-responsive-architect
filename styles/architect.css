@@ -1,7 +1,7 @@
 /* Work sens font */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
-/* share style  */
+/* share style Start */
 * {
     font-family: 'Work Sans', sans-serif;
 }
@@ -18,6 +18,11 @@
     border: 0px;
   
 }
+.text-light-gray{
+    color: #727272;
+   
+}
+/* share style End */
 
 /* header-section */
 header {
@@ -69,12 +74,7 @@ nav li a {
 
 }
 
-.banner-description {
-    color: #727272;
-    font-size: 1rem;
-    font-weight: 400;
 
-}
 .banner img{
     margin-top: 20px;
     width: 100%;
@@ -83,7 +83,7 @@ nav li a {
 /* main section Start */
 main{
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 /* main section End*/
 
@@ -104,10 +104,7 @@ main{
 .teams-title{
     font-size: 2.9rem;
 }
-.teams-title, .span-1{
-    color:#727272;
-    font-weight: 500;
-}
+
 .teams-title, .span-2{
     color:  #131313;
     font-weight: 700;
@@ -122,8 +119,15 @@ main{
     header{
         padding: 20px;
     }
-    nav{
+    nav,.teams-container{
         flex-direction: column;
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+    .teams-content{
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
@@ -133,7 +137,7 @@ main{
     header{
         padding: 50px;
     }
-    nav{
+    nav,.teams-container{
         flex-direction: column;
     }
 }
